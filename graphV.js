@@ -55,11 +55,9 @@ const knightsTravails = (start, end) => {
   const adjList = buildAdjList(myBoard);
   let q = [startIndex];
   let current;
-  let squaresChecked = 0; // temporary
 
   while (current !== endIndex) {
     let seen = [myBoard[startIndex]]
-    squaresChecked++ // temporary
 
     current = q.shift();
     // iterate through each neighbour vertex of current vertex
